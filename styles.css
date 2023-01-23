@@ -1,0 +1,453 @@
+*
+{
+    font-family: 'roboto','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+
+}
+.main-image{
+    background: url(images/desert.jpg) center ; 
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+}
+
+
+.share
+{
+    width: 180px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.logo
+{
+
+    margin: 30%;
+    
+
+}
+
+.backlogo
+{
+    width: 40px;
+    height: 40px ;
+    background-color: white;
+    border-radius: 300%;
+    margin-top:20px ;
+}
+
+#nav
+{
+    width: 25cm;
+    height: 70px;
+    background: #fffcf0;
+    display: flex;
+    position: relative;
+    margin: 40px auto;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#navlogo img
+{
+    background-color: #e4cf71;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+}
+
+ul
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 10cm;
+    align-items: center;
+    /* border: 2px solid red; */
+    margin-right: 1cm;
+
+}
+
+ul a
+{
+    /* border: 2px solid rgb(38, 0, 207); */
+    text-decoration: none ;
+    position: relative;
+    font-size: 20px;
+    color: rgb(77, 67, 39);
+    height: 100%;
+}
+ul a:after
+{
+    content: "";
+    position:absolute ;
+    background-color: rgb(252, 255, 50);
+    height: 3px;
+    width: 0;
+    top: -28px;
+    left: 0;
+    transition: 0.25s;
+}
+a:hover::after
+{
+    width: 100%;
+}
+h2
+{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-size: 30px ;
+    text-transform: uppercase;
+    color: rgb(57, 47, 24);
+    text-align: center;
+    margin: auto 30px;
+
+}
+.intro
+{
+    margin: 3cm auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 8cm;
+    
+    align-items: center;
+    justify-content: center;
+    padding: 2cm;
+    border: 2px solid burlywood;
+    backdrop-filter: blur(2px);
+    box-shadow: 5px 5px 5px black;
+}
+
+h2{
+    
+    text-transform: uppercase;
+    color:  rgb(255, 255, 255);
+    margin-bottom: 10%;
+    border-bottom: 1px solid rgb(193, 166, 143);
+    font-size: 35px;
+    font-family: 'roboto','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+p
+{
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h6
+{
+    display: flex;
+    width: 5cm;
+    background-color: #900C3F;
+    color: rgb(238, 238, 238);
+    text-transform: capitalize;
+    padding: 1rem;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.responsive
+{
+    margin-bottom: 10%;
+    width: 150px ;
+    height: 30px;
+    padding: 6px 9px;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.responsive a
+{
+    text-decoration: none;
+    color:rgb(48, 38, 12);
+    text-align: center;
+    justify-content: center;
+    font-family: 'roboto','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+/* --------section wheel */
+main {
+    display: flex;
+    flex-direction: column;
+}
+#wheel
+{
+margin: 0 auto;
+}
+#wheel span
+{
+    font-size: 1cm;
+    margin-top: 1cm;
+    background-color: red;
+    align-self: center;
+}
+.result
+{
+    
+    width: 400px;
+    height: 100px;
+    display: flex;
+    position: relative;
+    background-color: rgb(255, 212, 42);
+    border: dashed red;
+    color: black;
+    display: flex;
+    top: 350px;
+    left: 50px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    scale: 0;
+    transition: 0.3;
+    -webkit-transition: 0.3;
+    -moz-transition: 0.3;
+    -ms-transition: 0.3;
+    -o-transition: 0.3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+.circle
+{
+    width:500px;
+    height:500px;
+    background-color: #ccc;
+    border-radius:50%;
+    border:15px solid #dde;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 15px solid;
+    border-style: double;
+}
+
+.circle div
+{
+    height:235px;
+    width:200px;
+    position: absolute;
+    clip-path: polygon(100% 0 , 50% 100% , 0 0 );
+   
+    transform-origin:bottom;
+    text-align:center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size:20px;
+    font-weight:bold;
+    font-family:sans-serif;
+    color:rgb(0, 0, 0);
+    left:135px;
+
+}
+.red
+{
+    background-color: red;
+    transform: rotate(45deg)  ;
+    -webkit-transform: rotate(45deg)  ;
+    -moz-transform: rotate(45deg)  ;
+    -ms-transform: rotate(45deg)  ;
+    -o-transform: rotate(45deg)  ;
+}
+.purple
+{
+    background-color:purple ;
+    transition: rotate(45deg) ;
+    -webkit-transition: rotate(45deg) ;
+    -moz-transition: rotate(45deg) ;
+    -ms-transition: rotate(45deg) ;
+    -o-transition: rotate(45deg) ;
+}
+.blue
+{
+    background-color: blue;
+    transform: rotate(90deg)  ;
+    -webkit-transform: rotate(90deg)  ;
+    -moz-transform: rotate(90deg)  ;
+    -ms-transform: rotate(90deg)  ;
+    -o-transform: rotate(90deg)  ;
+}
+.sky-blue
+{
+    background-color: skyblue;
+    transform: rotate(135deg)  ;
+    -webkit-transform: rotate(135deg)  ;
+    -moz-transform: rotate(135deg)  ;
+    -ms-transform: rotate(135deg)  ;
+    -o-transform: rotate(135deg)  ;
+}
+.green
+{
+    background-color:  rgb(13, 176, 13);
+    transform:  rotate(180deg) ;
+    -webkit-transform:  rotate(180deg) ;
+    -moz-transform:  rotate(180deg) ;
+    -ms-transform:  rotate(180deg) ;
+    -o-transform:  rotate(180deg) ;
+}
+.black
+{
+    background-color:black ;
+    transform: rotate(225deg)  ;
+    -webkit-transform: rotate(225deg)  ;
+    -moz-transform: rotate(225deg)  ;
+    -ms-transform: rotate(225deg)  ;
+    -o-transform: rotate(225deg)  ;
+    color: rgb(255, 255, 255);
+}
+.yellow
+{
+    background-color:yellow;
+    transform: rotate(270deg)  ;
+    -webkit-transform: rotate(270deg)  ;
+    -moz-transform: rotate(270deg)  ;
+    -ms-transform: rotate(270deg)  ;
+    -o-transform: rotate(270deg)  ;
+}
+.orange
+{
+    background-color:orange ;
+    transform: rotate(315deg) ;
+    -webkit-transform: rotate(315deg) ;
+    -moz-transform: rotate(315deg) ;
+    -ms-transform: rotate(315deg) ;
+    -o-transform: rotate(315deg) ;
+}
+svg
+{
+    position: relative;
+    width: 40px;
+    left: 240px;
+    top: -20px;
+}
+button
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    position: relative;
+    left: 200px;
+    bottom: 270px;
+    width: 100px;
+    height: 40px;
+    background: linear-gradient(#ff2424, #1f32ff, #ffe207);
+    color: rgb(0, 0, 0);
+
+}
+@keyframes tournation {
+     to {
+        transform: rotate(720deg)    ;
+        -webkit-transform: rotate(720deg)    ;
+        -moz-transform: rotate(720deg)    ;
+        -ms-transform: rotate(720deg)    ;
+        -o-transform: rotate(720deg)    ;
+}
+};
+/*  */
+.main
+{
+    display: flex;
+    flex-direction: column;
+}
+.main p{
+    color: rgb(107, 107, 107);
+}
+.main .services
+{
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.main .services h3
+{
+    text-transform: uppercase;
+    color:  rgb(48, 38, 12);
+    margin-bottom: 0;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+    font-family: 'roboto','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+.boxes
+{
+    display: flex;
+    width: 23cm;
+    height: 200px;
+    margin: 10px auto;
+    justify-content: space-between;
+}
+.boxes img
+{
+    width: 25px;
+    padding: 40%;
+}
+
+#html
+{
+    width: 200px;
+    height: 200px;
+    background-color:#FFC300;
+}
+
+#navSvg
+{
+    width: 200px;
+    height: 200px;
+    background-color: #900C3F
+}
+
+#build
+{
+    width: 200px;
+    height: 200px;
+    background-color:#b1cf7a
+}
+#poison
+{
+    width: 200px;
+    height: 200px;
+    background-color:#FF5733 ;;
+}
+span
+{
+    font-size: 50px;
+    padding: 0;
+    margin: 0;
+    width:49px;
+}
